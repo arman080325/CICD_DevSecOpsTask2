@@ -1,8 +1,8 @@
 <div align="center">
 
-# 🚀 DevSecOps CI/CD Pipeline on EKS using GitHub Actions, Sealed Secrets & Argo CD
+🚀 DevSecOps CI/CD Pipeline on EKS using ⚙️ GitHub Actions, 🔐 Sealed Secrets & 🔁 Argo CD
 
-Automated, Secure, and GitOps-driven delivery pipeline leveraging modern DevSecOps best practices.
+A fully automated, security-focused, and GitOps-enabled deployment pipeline built with modern DevSecOps principles. 🛡️📦
 
 </div>
 
@@ -55,14 +55,19 @@ G --> H[Argo CD Syncs to EKS]
 
 ---
 
-## ⚙️ GitHub Actions CI/CD Features
+⚙️ GitHub Actions CI/CD Capabilities
 
-* ✅ Runs on every `push` to main/dev branches
-* ✅ `tfsec` Terraform static code analysis
-* ✅ `Trivy` Docker vulnerability scanning
-* ✅ Build & push Docker image
-* ✅ Apply sealed secrets to cluster
-* ✅ Argo CD sync triggers deployment
+✅ Automatically executes on each push to main or dev branches
+
+✅ Performs static code analysis on Terraform using tfsec
+
+✅ Scans container images for vulnerabilities using Trivy
+
+✅ Builds Docker images and pushes them to the container registry
+
+✅ Applies encrypted Kubernetes secrets using Sealed Secrets
+
+✅ Triggers deployment updates via Argo CD sync
 
 ---
 
@@ -73,7 +78,7 @@ G --> H[Argo CD Syncs to EKS]
 ├── .github/workflows/
 │   └── main.yml
 ├── infra/
-│   └── main.tf  # Terraform infra code
+│   └── main.tf  # Terraform infrastructure code
 |   └── secret.yaml
 |   └── variables.tf
 ├── manifests/
@@ -127,7 +132,7 @@ jobs:
 
 ## 🚀 Deployment
 
-Argo CD watches the GitOps repository and applies changes automatically to the EKS cluster.
+Argo CD continuously monitors the GitOps repository and automatically syncs any changes to the EKS cluster.
 
 ```bash
 argocd app sync your-app
@@ -135,20 +140,21 @@ argocd app sync your-app
 
 ---
 
-## 🔒 Security Highlights
+🔐 Security Enhancements 
 
-* ✅ Secrets encrypted using **Sealed Secrets**
-* ✅ Infrastructure scanned using **tfsec**
-* ✅ Container images scanned using **Trivy**
-* ✅ GitOps ensures tamper-proof deployments
+✅ Sensitive data protected using Sealed Secrets encryption
 
----
+✅ tfsec performs proactive infrastructure code scanning
+
+✅ Trivy detects vulnerabilities in container images before deployment
+
+✅ GitOps enforces secure, version-controlled, and auditable deployments
 
 ## 👨‍💻 Author
 
-**Abhijeet Dutta**
-🔗 [GitHub](https://github.com/abhijeetdutta-1908/CICD_DevSecOps)
+**Arman Ahemad Khan**
+🔗 [GitHub](https://github.com/arman080325/CICD_DevSecOpsTask2)
 
 ---
 
-> Made with ❤️ for DevSecOps excellence
+> Made with ❤️ for DevSecOps Expertise
